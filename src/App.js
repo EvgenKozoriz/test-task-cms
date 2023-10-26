@@ -3,19 +3,27 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-ro
 import LazyLoadedComponent from './components/LazyLoadedComponent';
 import './App.css';
 
+const tabs = [
+  { id: 'dummyTable', title: 'Dummy Table', order: 1, path: 'tabs/dummyTable.js' },
+  { id: 'dummyChart', title: 'Dummy Chart', order: 2, path: 'tabs/dummyChart.js' },
+  { id: 'dummyList', title: 'Dummy List', order: 0, path: 'tabs/dummyList.js' },
+];
 
 function App() {
-  const [tabs, setTabs] = useState([]);
+
+  // Simulation of work with api
+
+  // const [tabs, setTabs] = useState([]);
   
-  useEffect(() => {
-    fetch('http://localhost:3000/data/tabs.json')
-      .then(response => response.json())
-      .then(data => {
-        const sortedTabs = data.sort((a, b) => a.order - b.order);
-        setTabs(sortedTabs);
-      })
-      .catch(error => console.error('Something went wrong...', error));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/data/tabs.json')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       const sortedTabs = data.sort((a, b) => a.order - b.order);
+  //       setTabs(sortedTabs);
+  //     })
+  //     .catch(error => console.error('Something went wrong...', error));
+  // }, []);
   
   return (
     <Router>
