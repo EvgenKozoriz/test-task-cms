@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcms_test=self.webpackChunkcms_test||[]).push([[888],{888:function(t,e,s){s.r(e);s(791);var c=s(184);e.default=function(){return(0,c.jsx)("table",{children:(0,c.jsx)("tbody",{children:(0,c.jsxs)("tr",{children:[(0,c.jsx)("td",{children:"Dummy"}),(0,c.jsx)("td",{children:"Chart"})]})})})}}}]);
+//# sourceMappingURL=888.4ed1659d.chunk.js.map
